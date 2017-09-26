@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+body {
+    font-family: "Segoe UI Light";
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+
+
+.list {
+    font-family: "Segoe UI Light";
+    letter-spacing: 1px;
+}
+
+.top-menu {
+    width: 100%;
+    background-color: rgba(28, 43, 75, 1);
+    height: auto;
+}
+
+.navbar-logo {
+    display: inline-block;
+    padding-left: 100px;
+}
+
+.menu-main {
+    margin: 0;
+    padding-left: 0;
+    float: right;
+}
+
+.menu-main li {
+    display: inline-block;
+    padding-top: 20px;
+    padding-right: 55px;
+    position: relative;
+}
+
+.menu-main a {
+    text-decoration: none;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    line-height: 50px;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    color: #f3f7e5;
+    height: auto;
+}
+
+li a:hover {
+    color: #ffcb4e;
+}
+
+ul.submenu {
+    margin-left: -20px;
+    display: none;
+    width: 150px;
+    background-color: rgba(28, 43, 75, 1);
+    font-size: 15px;
+    position: absolute;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+ul.submenu > li > a:hover {
+    color: #ffcb4e;
+}
+
+ul.menu-main > li:hover > ul {
+    display: block;
+}
+
+.main {
+    display: block;
+    padding-left: 15%;
+    padding-right: 15%;
+    animation-name: fade-in;
+    animation-duration: .5s;
+    font-size: 18px;
+    text-align: justify;
+}
+
+footer {
+    font-size: 15px;
+    display: block;
+    background-color: rgba(28, 43, 75, 1);
+    color: #fff;
+    height: 20px;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
