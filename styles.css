@@ -27,6 +27,7 @@ header div {
 }
 
 .menu-main {
+    z-index: 999;
     width: 100%;
     height: auto;
     margin: 0;
@@ -40,6 +41,7 @@ header div {
     padding-top: 20px;
     padding-right: 55px;
     position: relative;
+
 }
 
 .menu-main a {
@@ -56,7 +58,7 @@ header div {
 }
 
 ul.submenu {
-    z-index:1000;
+    z-index: 1000;
     margin-left: -30px;
     display: none;
     width: 150px;
@@ -70,19 +72,24 @@ ul.submenu > li > a {
     padding: 1px;
     color: white;
     text-decoration: none;
-
 }
 
-li a:hover {
+li > a:hover {
     color: #ffcb4e;
+}
+
+li:hover {
+    animation: bounce 1s;
 }
 
 ul.submenu > li > a:hover {
     color: #ffcb4e;
+    animation: bounce 1s;
 }
 
 ul.menu-main > li:hover > ul {
     display: block;
+
 }
 
 h1 {
@@ -123,13 +130,13 @@ h2 {
     text-align: center;
 }
 
-#left{
+#left {
     padding: 15px;
     float: left;
     width: 50%;
 }
 
-#right{
+#right {
     margin-left: 55%;
     padding-top: 10%;
 }
@@ -166,7 +173,7 @@ footer {
     clear: both;
 }
 
-.fadeIn{
+.fadeIn {
     animation-name: fadeIn;
     -webkit-animation-name: fadeIn;
 
@@ -215,7 +222,7 @@ footer {
     }
 }
 
-.slideRight{
+.slideRight {
     animation-name: slideRight;
     -webkit-animation-name: slideRight;
 
@@ -232,16 +239,16 @@ footer {
     0% {
         transform: translateX(-150%);
     }
-    50%{
+    50% {
         transform: translateX(8%);
     }
-    65%{
+    65% {
         transform: translateX(-4%);
     }
-    80%{
+    80% {
         transform: translateX(4%);
     }
-    95%{
+    95% {
         transform: translateX(-2%);
     }
     100% {
@@ -253,19 +260,38 @@ footer {
     0% {
         -webkit-transform: translateX(-150%);
     }
-    50%{
+    50% {
         -webkit-transform: translateX(8%);
     }
-    65%{
+    65% {
         -webkit-transform: translateX(-4%);
     }
-    80%{
+    80% {
         -webkit-transform: translateX(4%);
     }
-    95%{
+    95% {
         -webkit-transform: translateX(-2%);
     }
     100% {
         -webkit-transform: translateX(0%);
     }
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+.button:hover {
+    animation: bounce 1s;
 }
