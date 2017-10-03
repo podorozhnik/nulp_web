@@ -79,12 +79,15 @@ li > a:hover {
 }
 
 li:hover {
-    animation: bounce 1s;
+    animation: enlarge 1s;
 }
 
 ul.submenu > li > a:hover {
     color: #ffcb4e;
-    animation: bounce 1s;
+}
+
+ul.submenu > li:hover {
+    animation: enlarge 1s;
 }
 
 ul.menu-main > li:hover > ul {
@@ -277,21 +280,10 @@ footer {
     }
 }
 
-@keyframes bounce {
-    0%, 20%, 60%, 100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
+@keyframes enlarge {
+    100% {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
     }
-    40% {
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-    80% {
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-}
-
-.button:hover {
-    animation: bounce 1s;
 }
