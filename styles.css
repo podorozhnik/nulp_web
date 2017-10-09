@@ -6,94 +6,68 @@ body {
     padding: 0;
 }
 
-header {
-    z-index: 1000;
-    display: table;
-    width: 100%;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background-color: rgba(28, 43, 75, 1);
-}
-
-header nav,
-header div {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.navbar-logo {
-    display: inline-block;
-    padding-left: 100px;
-}
-
-.menu-main {
-    z-index: 999;
-    width: 100%;
-    height: auto;
+.navbar {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1.5px;
+    border-color: transparent;
     margin: 0;
-    padding-left: 0;
-    float: right;
-    text-align: right;
 }
-
-.menu-main li {
-    display: inline-block;
-    padding-top: 20px;
-    padding-right: 55px;
-    position: relative;
-
-}
-
-.menu-main a {
-    text-decoration: none;
-    font-family: 'Arimo', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    position: relative;
-    line-height: 50px;
-    padding-left: 10px;
-    letter-spacing: 2px;
-    color: #f3f7e5;
-    height: auto;
-}
-
-ul.submenu {
-    z-index: 1000;
-    margin-left: -30px;
-    display: none;
-    width: 150px;
+.navbar-inverse {
     background-color: rgba(28, 43, 75, 1);
-    font-size: 15px;
-    position: absolute;
 }
-
-ul.submenu > li > a {
-    display: block;
-    padding: 1px;
-    color: white;
-    text-decoration: none;
+.navbar-inverse .navbar-toggle {
+    border-color: rgb(19, 24, 44);
 }
-
-li > a:hover {
-    color: #ffcb4e;
+.navbar-inverse .navbar-toggle:hover {
+    background-color: rgb(19, 24, 44);
 }
-
-li:hover {
-    animation: enlarge 1s;
+.navbar-brand {
+    font-weight: bold;
 }
-
-ul.submenu > li > a:hover {
-    color: #ffcb4e;
+.navbar li:hover {
+    background-color: rgb(19, 24, 44);
 }
-
-ul.submenu > li:hover {
-    animation: enlarge 1s;
-}
-
-ul.menu-main > li:hover > ul {
-    display: block;
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;
+    }
 
 }
+
+.FB-logo-wrapper {
+    display: inline-block;
+    margin-top: -30px;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: .6px;
+}
+.FB-logo-wrapper .FB-logo {
+    margin-right: -15px;
+    padding-bottom: 3px;
+}
+
+.bio-text {
+    max-width: 50em;
+    margin: 80px auto;
+    font: 1.8rem 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #333;
+    letter-spacing: .5px;
+    line-height: 33px;
+    text-align: justify;
+    background-color: #fff;
+    padding: 30px 70px;
+    border-radius: 5px;
+}
+.section-header {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font: 300 60px 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    color: #222;
+}
+
 
 h1 {
     position: absolute;
@@ -119,29 +93,17 @@ h1 {
     top: 0;
     width: 100%;
 }
-
-.main {
-    margin-top: auto;
-    display: block;
-    padding-left: 15%;
-    padding-right: 15%;
-    font-size: 18px;
-    text-align: justify;
-}
-
 h2 {
     text-align: center;
 }
 
 #left {
     padding: 15px;
-    float: left;
-    width: 50%;
 }
 
 #right {
-    margin-left: 55%;
     padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .label {
@@ -152,16 +114,12 @@ h2 {
     float: left;
     font-size: 16px;
     color: #333;
+    padding: 0;
 }
 
 .text {
     margin-left: 102px;
     display: block;
-}
-
-.right div {
-    margin-top: 20px;
-    line-height: 18px;
 }
 
 footer {
@@ -178,15 +136,9 @@ footer {
 
 .fadeIn {
     animation-name: fadeIn;
-    -webkit-animation-name: fadeIn;
-
     animation-duration: 2s;
-    -webkit-animation-duration: 2s;
-
     animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
-
-    visibility: visible !important;
+    visibility: visible;
 }
 
 @keyframes fadeIn {
@@ -204,86 +156,5 @@ footer {
     100% {
         transform: scale(1);
         opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        -webkit-transform: scale(0);
-        opacity: 0.0;
-    }
-    60% {
-        -webkit-transform: scale(1.1);
-    }
-    80% {
-        -webkit-transform: scale(0.9);
-        opacity: 1;
-    }
-    100% {
-        -webkit-transform: scale(1);
-        opacity: 1;
-    }
-}
-
-.slideRight {
-    animation-name: slideRight;
-    -webkit-animation-name: slideRight;
-
-    animation-duration: 2s;
-    -webkit-animation-duration: 2s;
-
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
-
-    visibility: visible !important;
-}
-
-@keyframes slideRight {
-    0% {
-        transform: translateX(-150%);
-    }
-    50% {
-        transform: translateX(8%);
-    }
-    65% {
-        transform: translateX(-4%);
-    }
-    80% {
-        transform: translateX(4%);
-    }
-    95% {
-        transform: translateX(-2%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-@-webkit-keyframes slideRight {
-    0% {
-        -webkit-transform: translateX(-150%);
-    }
-    50% {
-        -webkit-transform: translateX(8%);
-    }
-    65% {
-        -webkit-transform: translateX(-4%);
-    }
-    80% {
-        -webkit-transform: translateX(4%);
-    }
-    95% {
-        -webkit-transform: translateX(-2%);
-    }
-    100% {
-        -webkit-transform: translateX(0%);
-    }
-}
-
-@keyframes enlarge {
-    100% {
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2);
     }
 }
