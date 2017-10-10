@@ -7,74 +7,63 @@ body {
 }
 
 .navbar {
-    font-family: 'Raleway', sans-serif;
     letter-spacing: 1.5px;
     border-color: transparent;
     margin: 0;
 }
+
 .navbar-inverse {
     background-color: rgba(28, 43, 75, 1);
 }
+
 .navbar-inverse .navbar-toggle {
     border-color: rgb(19, 24, 44);
 }
+
 .navbar-inverse .navbar-toggle:hover {
     background-color: rgb(19, 24, 44);
 }
-.navbar-brand {
-    font-weight: bold;
-}
+
 .navbar li:hover {
     background-color: rgb(19, 24, 44);
 }
-@media (min-width: 768px) {
-    .navbar {
-        border-radius: 0;
-    }
 
+.navbar {
+    border-radius: 0;
 }
 
-.FB-logo-wrapper {
+.logo-wrapper {
     display: inline-block;
     margin-top: -30px;
     color: #fff;
     font-weight: 100;
     letter-spacing: .6px;
 }
-.FB-logo-wrapper .FB-logo {
+
+.logo-wrapper .logo {
     margin-right: -15px;
     padding-bottom: 3px;
 }
 
-.bio-text {
-    max-width: 50em;
-    margin: 80px auto;
-    font: 1.8rem 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: #333;
-    letter-spacing: .5px;
-    line-height: 33px;
-    text-align: justify;
-    background-color: #fff;
-    padding: 30px 70px;
-    border-radius: 5px;
+@media(max-device-width: 720px){
+    .nameOfPage{
+        color: #000;
+        font-size: large;
+        position: static;
+        margin-left: 40px;
+    }
 }
-.section-header {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    font: 300 60px 'Raleway', sans-serif;
-    letter-spacing: 3px;
-    color: #222;
-}
-
 
 h1 {
     position: absolute;
-    top: 50%;
+    top: 150px;
     left: 18%;
     color: white;
     text-transform: uppercase;
+}
+
+h2 {
+     text-align: center;
 }
 
 #mask {
@@ -93,8 +82,22 @@ h1 {
     top: 0;
     width: 100%;
 }
-h2 {
+
+.bio-text {
+    max-width: 50em;
+    margin: 80px auto;
+    color: #333;
+    letter-spacing: .5px;
+    text-align: justify;
+    line-height: 23px;
+}
+
+.section-header {
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+    color: #222;
 }
 
 #left {
@@ -123,14 +126,14 @@ h2 {
 }
 
 footer {
-    font-size: 15px;
+    font-size: 90%;
     display: block;
     background-color: rgba(28, 43, 75, 1);
     color: #fff;
     height: 20px;
     text-align: center;
-    padding-top: 2%;
-    padding-bottom: 4%;
+    padding-top: 40px;
+    padding-bottom: 50px;
     clear: both;
 }
 
@@ -158,3 +161,4 @@ footer {
         opacity: 1;
     }
 }
+
