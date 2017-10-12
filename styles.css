@@ -48,9 +48,9 @@ body {
 @media(max-device-width: 720px){
     .nameOfPage{
         color: #000;
-        font-size: large;
+        font-size: larger;
         position: static;
-        margin-left: 40px;
+        margin-left: 50px;
     }
 }
 
@@ -83,21 +83,13 @@ h2 {
     width: 100%;
 }
 
-.bio-text {
+.main-text {
     max-width: 50em;
     margin: 80px auto;
     color: #333;
     letter-spacing: .5px;
     text-align: justify;
     line-height: 23px;
-}
-
-.section-header {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    letter-spacing: 3px;
-    color: #222;
 }
 
 #left {
