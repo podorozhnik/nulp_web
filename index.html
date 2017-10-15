@@ -5,9 +5,8 @@
 	<meta charset="UTF-8">
 	<title>Проблеми застосування Сімейного кодексу України</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-	<link rel='stylesheet prefetch'
-	      href='https://cdn.rawgit.com/dimsemenov/Magnific-Popup/master/dist/magnific-popup.css'>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://cdn.rawgit.com/dimsemenov/Magnific-Popup/master/dist/magnific-popup.css'>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
@@ -35,14 +34,14 @@
 		</div>
 		<div class="collapse navbar-collapse navHeaderCollapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="index.html">Головна</a>
+				<li  class="active"><a href="index.html">Головна</a>
 				</li>
-				<li><a href="#">Новини</a>
+				<li><a href="news.html">Новини</a>
 				</li>
 				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Студентам<b
 						class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Програма</a>
+						<li><a href="curriculum.html">Програма</a>
 						</li>
 						<li><a href="#">Лабораторні</a>
 						</li>
@@ -50,20 +49,22 @@
 						</li>
 					</ul>
 				</li>
-				<li><a href="#">Відгуки</a>
+				<li><a href="reviews.html">Відгуки</a>
 				</li>
 				<li><a href="contacts.html">Контакти</a>
 				</li>
-				<li><a href="#">Admin</a>
+				<li><a href="admin.html">Admin</a>
 				</li>
 			</ul>
 		</div>
 	</div>
 </nav>
+
 <div>
-	<div class="img-wrap">
+	<div class="parallax">
+		<h1 class="nameOfPage fadeIn"><span>Проблеми застосування<br>Сімейного кодексу України</span></h1>
 		<div class="img-responsive" id="mask"><img src="images/main.jpeg" width="100%"></div>
-		<h1 class="fadeIn nameOfPage"><span>Проблеми застосування<br>Сімейного кодексу України</span></h1>
+
 	</div>
 </div>
 <div class="container">
@@ -110,24 +111,41 @@
 		</ul>
 		</p>
 		<h2>Останні новини</h2>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tortor ex, ultricies sed gravida
-			vitae, finibus et ante. Aliquam at magna mi. Vestibulum ante ipsum primis in faucibus orci luctus et
-			ultrices
-			posuere cubilia Curae; Pellentesque facilisis leo neque. Sed et libero eget nisi laoreet lacinia.
-			Phasellus facilisis et massa sit amet sollicitudin. In vel elit eget arcu dignissim posuere. Nulla facilisi.
-			Sed
-			felis metus, mattis pretium placerat ut, suscipit vitae lacus. Vivamus imperdiet volutpat dignissim.
-			Curabitur
-			nunc leo, dictum vel augue eget, laoreet fringilla arcu. Donec non aliquam libero, in maximus tellus.
-
-			Quisque non efficitur urna. Vivamus urna purus, tincidunt non nulla nec, efficitur lacinia mauris.
-			Vestibulum luctus vitae tellus eu varius. In lacinia diam et metus ultrices, in commodo dui vehicula.
-			Vivamus at faucibus est. Maecenas nec scelerisque turpis, at interdum velit. Morbi ultricies at turpis
-			sit amet condimentum. Phasellus vel vulputate turpis, quis sollicitudin nibh. Maecenas mi nulla, congue non
-			arcu non, sagittis aliquet mi. Proin nisi risus, viverra ut luctus eget, auctor ut libero. Aliquam vel
-			commodo felis, ac dignissim massa. Sed tellus turpis, dignissim at blandit sit amet, ullamcorper quis leo.
-		</p>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="#">
+						<img src="images/news1.jpg" style="width:100%">
+						<div class="caption">
+							<p>Заголовок 1</p>
+						</div>
+						<p>Lorem ipsum...</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="#">
+						<img src="images/news2.jpg" style="width:100%">
+						<div class="caption">
+							<p>Заголовок 2</p>
+						</div>
+						<p>Lorem ipsum...</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<a href="#">
+						<img src="images/news3.jpg" style="width:100%">
+						<div class="caption">
+							<p>Заголовок 3</p>
+						</div>
+						<p>Lorem ipsum...</p>
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 

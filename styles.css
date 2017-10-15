@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo');
 
+html{
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-family: "Segoe UI Light";
-    margin: 0;
     padding: 0;
+    margin-bottom: 100px;
 }
 
 .navbar {
@@ -45,28 +50,38 @@ body {
     padding-bottom: 3px;
 }
 
-@media(max-device-width: 720px){
-    .nameOfPage{
-        color: #000;
-        font-size: larger;
-        position: static;
-        margin-left: 50px;
+
+.nameOfPage{
+    margin-top: 10%;
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+
+}
+
+@media (max-device-width: 600px){
+    .nameOfPage {
+        font-size: medium;
+        right: 20%;
+        left: 20%;
+        padding-bottom: 30px;
     }
 }
 
-h1 {
-    position: absolute;
-    top: 150px;
-    left: 18%;
-    color: white;
-    text-transform: uppercase;
-}
-
-h2 {
+h1, h2, h4 {
      text-align: center;
 }
 
+
 #mask {
+
     position: relative;
     width: 100%;
 }
@@ -84,8 +99,6 @@ h2 {
 }
 
 .main-text {
-    max-width: 50em;
-    margin: 80px auto;
     color: #333;
     letter-spacing: .5px;
     text-align: justify;
@@ -97,6 +110,7 @@ h2 {
 }
 
 #right {
+    padding-left: 15px;
     padding-top: 10%;
     padding-bottom: 10%;
 }
@@ -117,9 +131,23 @@ h2 {
     display: block;
 }
 
-footer {
+.review-author{
+font-weight: bold;
+    font-size: large;
+}
+
+.review-date{
+    color: #979797;
+    font-style: italic;
     font-size: 90%;
-    display: block;
+}
+
+footer {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 90%;
     background-color: rgba(28, 43, 75, 1);
     color: #fff;
     height: 20px;
@@ -128,6 +156,7 @@ footer {
     padding-bottom: 50px;
     clear: both;
 }
+
 
 .fadeIn {
     animation-name: fadeIn;
@@ -153,4 +182,3 @@ footer {
         opacity: 1;
     }
 }
-
