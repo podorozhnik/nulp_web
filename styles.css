@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo');
 
-<<<<<<< HEAD
-html {
-=======
 html{
->>>>>>> origin/master
     position: relative;
     min-height: 100%;
 }
@@ -53,8 +49,6 @@ body {
     margin-right: -15px;
     padding-bottom: 3px;
 }
-
-<<<<<<< HEAD
 .nameOfPage {
     margin-top: 10%;
     position: absolute;
@@ -71,9 +65,7 @@ body {
 }
 
 @media (max-device-width: 600px) {
-=======
-
-.nameOfPage{
+.nameOfPage {
     margin-top: 10%;
     position: absolute;
     right: 15%;
@@ -84,12 +76,11 @@ body {
     color: #fff;
     text-align: center;
     vertical-align: middle;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
-
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
 }
 
 @media (max-device-width: 600px){
->>>>>>> origin/master
     .nameOfPage {
         font-size: medium;
         right: 20%;
@@ -99,11 +90,10 @@ body {
 }
 
 h1, h2, h4 {
-<<<<<<< HEAD
+
     text-align: center;
-=======
-     text-align: center;
->>>>>>> origin/master
+
+
 }
 
 
@@ -158,21 +148,13 @@ h1, h2, h4 {
     display: block;
 }
 
-<<<<<<< HEAD
 .review-author {
     font-weight: bold;
     font-size: large;
 }
 
-.review-date {
-=======
-.review-author{
-font-weight: bold;
-    font-size: large;
-}
-
 .review-date{
->>>>>>> origin/master
+
     color: #979797;
     font-style: italic;
     font-size: 90%;
@@ -193,7 +175,6 @@ footer {
     clear: both;
 }
 
-<<<<<<< HEAD
 .error-template {
     padding: 40px 15px;
     text-align: center;
@@ -207,8 +188,7 @@ footer {
 .error-actions .btn {
     margin-right: 10px;
 }
-=======
->>>>>>> origin/master
+
 
 .fadeIn {
     animation-name: fadeIn;
@@ -234,3 +214,4 @@ footer {
         opacity: 1;
     }
 }
+
