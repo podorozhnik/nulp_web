@@ -1,0 +1,17 @@
+CACHE MANIFEST
+# 21.10.2017:v1
+
+index.html
+error.html
+styles.css
+css/bootstrap.min.css
+css/magnific-popup.css
+images/logo.png
+images/main.jpeg
+js/bootstrap.min.js
+js/jquery.min.js
+js/scroolreveal.js
+js/magnific-popup.js
+
+FALLBACK:
+/ /error.html
