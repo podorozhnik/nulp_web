@@ -1,17 +1,24 @@
 CACHE MANIFEST
-# 21.10.2017:v1
 
 index.html
+curriculum.html
+contacts.html
 error.html
+news.html
+admin.html
 styles.css
 css/bootstrap.min.css
 css/magnific-popup.css
 images/logo.png
 images/main.jpeg
+images/contacts.jpg
+images/news1.jpg
+images/news2.jpg
+images/news3.jpg
 js/bootstrap.min.js
 js/jquery.min.js
 js/scroolreveal.js
 js/magnific-popup.js
 
 FALLBACK:
-/ /error.html
+/error.html
