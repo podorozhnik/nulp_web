@@ -1,104 +1,100 @@
 <!DOCTYPE html>
-<html  manifest="manifest.cache">
+<html manifest="manifest.cache">
 <head>
-    <meta charset="UTF-8">
-    <title>Admin</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href='css/bootstrap.min.css'>
-    <link rel='stylesheet' href='css/magnific-popup.css'>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<title>Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' href='css/bootstrap.min.css'>
+	<link rel='stylesheet' href='css/magnific-popup.css'>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <nav class="navbar navbar-inverse">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
-                <div class="logo-wrapper">
-                    <img class="logo" src="images/logo.png" height="50px" width="50px"/>
-                </div>
-            </a>
-            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navHeaderCollapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse navHeaderCollapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">Головна</a>
-                </li>
-                <li><a href="news.html">Новини</a>
-                </li>
-                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Студентам<b
-                        class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="curriculum.html">Програма</a>
-                        </li>
-                        <li><a href="#">Лабораторні</a>
-                        </li>
-                        <li><a href="#">Література</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="reviews.html">Відгуки</a>
-                </li>
-                <li><a href="contacts.html">Контакти</a>
-                </li>
-                <li  class="active"><a href="admin.html">Admin</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html">
+				<div class="logo-wrapper">
+					<img class="logo" src="images/logo.png" height="50px" width="50px"/>
+				</div>
+			</a>
+			<button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse navHeaderCollapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Головна</a>
+				</li>
+				<li><a href="news.html">Новини</a>
+				</li>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Студентам<b
+						class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="curriculum.html">Програма</a>
+						</li>
+						<li><a href="#">Лабораторні</a>
+						</li>
+						<li><a href="#">Література</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="reviews.html">Відгуки</a>
+				</li>
+				<li><a href="contacts.html">Контакти</a>
+				</li>
+				<li class="active"><a href="admin.html">Admin</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 </nav>
 
 
 <div class="container">
-    <div class="main-text">
-        <h2>Додати новину</h2>
-<br>
-        <div class="col-lg-6 col-md-6">
-            <div class="form-group">
-                <label>Виберіть зображення</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                <br>
-                <img src="images/picture-icon.png" width="80%">
-            </div>
-        </div>
+	<div class="main-text">
+		<h2>Додати новину</h2>
+		<br>
 
-        <div class="col-lg-6 col-md-6">
-            <div>
-                <input type="text" class="form-control" placeholder="Заголовок">
-            </div>
-            <br>
-            <div class="form-group">
-                <textarea class="form-control" rows="15" placeholder="Новина"></textarea>
-            </div>
-            <br>
-            <div class="form-group row">
-                <div class="col-sm-10">
-                    <button type="submit" class="btn btn-primary">Відправити <span class="glyphicon glyphicon-send"></span></button>
-                </div>
-            </div>
-        </div>
-    </div>
+		<div class="col-md-6">
+				<form id="news-img-form">
+					<label>Виберіть зображення</label>
+					<input id="news-img" type="file" class="form-control-file">
+				</form>
+		</div>
+
+
+		<div class="col-md-6">
+			<form id="news-form">
+				<input id="news-name" type="text" class="form-control" placeholder="Заголовок">
+				<br>
+				<textarea id="news-text" class="form-control" rows="15" placeholder="Новина"></textarea>
+				<br>
+				<input type="button" value="Надіслати" class="btn btn-primary" onclick="addNews()">
+			</form>
+		</div>
+
+	</div>
 </div>
 
 
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <div class="footer-box">
-                    <div>© 2017 IoT@NULP Created by Antonina Melnyk</div>
-                </div>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div class="footer-box">
+					<div>© 2017 IoT@NULP Created by Antonina Melnyk</div>
+				</div>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+	</div>
 </footer>
 
+<script src="reviews.js"></script>
 <script src='js/jquery.min.js'></script>
 <script src='js/scroolreveal.js'></script>
 <script src='js/bootstrap.min.js'></script>
