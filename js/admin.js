@@ -16,19 +16,21 @@ function addNews() {
     if (isOnline()){
         document.getElementById('news-form').reset();
         document.getElementById('news-img-form').reset();
+        target.src = 'images/picture-icon.png';
         alert('Новина успішно надіслана.');
     } else{
 
         var name = document.getElementById('news-name').value;
         var text = document.getElementById('news-text').value;
-        var img = document.getElementById('news-img').value;
+        imgData = target.src;
         i++;
         var list = [];
-        list.push({"name": (name),"text": (text), "img": (img)});
+        list.push({"name": (name),"text": (text)});
         localStorage.setItem('n'+i, JSON.stringify(list));
-
+        localStorage.setItem('i'+i, (imgData));
         document.getElementById('news-form').reset();
         document.getElementById('news-img-form').reset();
+        target.src = 'images/picture-icon.png';
     }
 }
 

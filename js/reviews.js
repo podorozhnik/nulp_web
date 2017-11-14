@@ -46,6 +46,7 @@ function addReview() {
         var list = [];
         list.push({"name":author, "text":text, "date":date});
         localStorage.setItem('r'+i, JSON.stringify(list));
+        document.getElementById('form').reset();
     }
 }
 
