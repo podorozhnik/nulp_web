@@ -4,9 +4,6 @@
 
 var useLocalStorage = true;
 
-var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
-IDBTransaction  = window.IDBTransaction || window.webkitIDBTransaction || window.msIDBTransaction;
-
 var request = indexedDB.open('db', 3);
 
 request.onerror = function (e) {

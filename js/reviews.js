@@ -57,7 +57,6 @@ function addReview() {
                 time: new Date
             };
             store.add(review);
-            console.log("sosoososos")
         }
         document.getElementById('form').reset();
     }
