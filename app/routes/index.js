@@ -7,9 +7,3 @@ module.exports = function(app, db) {
     noteRoutes(app, db);
 };
 
-module.exports = function(app, db) {
-    app.post('/reviews', function (req,res){
-        console.log(req.body);
-        res.send(req.body)
-})
-};
