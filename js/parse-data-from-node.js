@@ -1,8 +1,5 @@
-/**
- * Created by Antonina on 11.12.2017.
- */
 $.ajax({
-    url: 'http://localhost:8080/api/posts',
+    url: 'http://localhost:8080/api/bears',
     type: "get",
     dataType: "json",
 
@@ -18,16 +15,9 @@ function drawTable(data) {
 }
 
 function drawRow(rowData) {
-    var parentElem = document.getElementById('news-list');
-    var out = document.createElement('div');
-    out.id = 'news';
-    out.innerHTML =
-        "<div class='col-md-4'>" +
-        "<div class='card'> " +
-        "<a href='#'> " +
-        "<img src='" + img + "' width='100%'>" +
-        "<div class='caption'><p>" + name + "</p></div>" +
-        " <p>" + text + "</p>" +
-        "</a></div></div>";
-    parentElem.appendChild(out);
+    var row = $("<article class='card col-md-3' style='margin: 30px;'>")
+    $("#personDataTable").append(row);
+    row.append($("<img src='images/news1.jpg' style='width:100%'>"));
+    row.append($("<div class='caption'>" + rowData.longdescription + "</div>"));
+    row.append($("<p>" + rowData.shortdescription + "</p>"));
 }
